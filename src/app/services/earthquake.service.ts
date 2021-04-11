@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpService} from './http.service';
 import {EarthquakeLoader} from '../utils/earthquake-loader';
+import {environment} from '../../environments/environment';
 
 
 @Injectable({
@@ -18,6 +19,6 @@ export class EarthquakeService {
   }
 
   async init(): Promise<any> {
-    this.earthquakeInfo = new EarthquakeLoader().load(await this.httpClient.get('http://localhost:4200/api'));
+    this.earthquakeInfo = new EarthquakeLoader().load(await this.httpClient.get(environment.earthQuakeServiceUrl));
   }
 }
