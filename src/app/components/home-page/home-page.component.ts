@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {EarthquakeService} from '../../services/earthquake.service';
 
 @Component({
@@ -6,15 +6,8 @@ import {EarthquakeService} from '../../services/earthquake.service';
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss']
 })
-export class HomePageComponent implements OnInit {
-
+export class HomePageComponent {
 
   constructor(public earthquakeService: EarthquakeService) {
   }
-
-  async ngOnInit(): Promise<any> {
-    await this.earthquakeService.init();
-  }
-
-
 }
