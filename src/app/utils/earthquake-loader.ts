@@ -14,7 +14,8 @@ export class EarthquakeLoader {
       detail: value.properties.detail,
       status: value.properties.status,
       tsunami: value.properties.tsunami,
-      type: value.properties.type,
+      url: value.properties.url,
+      type: value.properties.type
     } as EarthquakeItem;
   }
 }

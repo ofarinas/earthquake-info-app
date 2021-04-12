@@ -5,6 +5,7 @@ export interface EarthquakeItem {
   detail: string;
   status: string;
   tsunami: string;
+  url: string;
   type: string;
   title: string;
 }
