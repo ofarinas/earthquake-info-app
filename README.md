@@ -1,7 +1,14 @@
 # EarthquakeInfoApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+##Deployment
 
+The application is deployed on Netlify under https://wizardly-kowalevski-131c3a.netlify.app/  in order to add a new functionality or
+ adjust the currently code, you need to make the following:
+ 1 Clone the project.
+ 2 Make a commit on the master branch.
+ 
+ The Adjustments will be deployed automatically into Netlify due the Github repository are connected with Netlify.
+ 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
