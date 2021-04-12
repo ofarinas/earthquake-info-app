@@ -16,8 +16,10 @@ mat-table {
 
 mat-header-row, mat-row {
   min-width: 40% !important;
-  margin-right: 6px;
-  margin-left: 6px;
+}
+
+.margin-right-32 {
+  margin-right: 32px !important;
 }
 
 .example-container {
@@ -51,6 +53,9 @@ mat-header-row, mat-row {
   }
   .mat-form-field {
     width: 80%;
+  }
+  .margin-right-32 {
+    margin-right: 0 !important;
   }
 }
 

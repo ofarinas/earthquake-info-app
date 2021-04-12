@@ -11,8 +11,8 @@
     <mat-table #table [dataSource]="dataSource" matSort>
 
       <ng-container matColumnDef="title">
-        <mat-header-cell *matHeaderCellDef mat-sort-header>Title</mat-header-cell>
-        <mat-cell *matCellDef="let row">
+        <mat-header-cell *matHeaderCellDef mat-sort-header class="margin-right-32">Title</mat-header-cell>
+        <mat-cell  class="margin-right-32" *matCellDef="let row">
           <span class="mobile-label">Title</span>
           {{row.title}}
         </mat-cell>
@@ -20,7 +20,7 @@
 
       <ng-container matColumnDef="place">
         <mat-header-cell *matHeaderCellDef mat-sort-header> Place</mat-header-cell>
-        <mat-cell *matCellDef="let row">
+        <mat-cell class="margin-right-32" *matCellDef="let row">
           <span class="mobile-label">
         Place
         </span>
