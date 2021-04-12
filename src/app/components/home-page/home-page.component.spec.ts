@@ -1,6 +1,8 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {HomePageComponent} from './home-page.component';
+import {UiSharedModule} from '../../ui-shared.module';
+import {EarthquakeService} from '../../services/earthquake.service';
 
 describe('HomePageComponent', () => {
   let component: HomePageComponent;
@@ -8,7 +10,17 @@ describe('HomePageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [HomePageComponent]
+      declarations: [],
+      providers: [{
+        provide: EarthquakeService, useValue: {
+          init: () => {
+
+          },
+          getEarthquakeInfo: () => {
+          }
+        }
+      }],
+      imports: [UiSharedModule]
     })
       .compileComponents();
   });
@@ -21,8 +33,5 @@ describe('HomePageComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
-  });
-  it('should get the earthquake date', () => {
-    expect(component.earthquakeService.init()).toBeDefined();
   });
 });

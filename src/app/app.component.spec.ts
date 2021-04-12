@@ -1,5 +1,7 @@
-import { TestBed } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import {TestBed} from '@angular/core/testing';
+import {AppComponent} from './app.component';
+import {UiSharedModule} from './ui-shared.module';
+import {EarthquakeService} from './services/earthquake.service';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -7,6 +9,15 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      providers: [{
+        provide: EarthquakeService, useValue: {
+          init: () => {
+          },
+          getEarthquakeInfo: () => {
+          }
+        }
+      }],
+      imports: [UiSharedModule]
     }).compileComponents();
   });
 
@@ -22,10 +33,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('earthquake-info-app');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('earthquake-info-app app is running!');
-  });
 });
