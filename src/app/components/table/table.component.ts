@@ -20,7 +20,6 @@ export class TableComponent implements OnInit, AfterViewInit {
   @ViewChild(MatSort) sort: MatSort;
 
   constructor() {
-
   }
 
   ngAfterViewInit(): void {
