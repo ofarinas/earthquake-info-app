@@ -7,10 +7,10 @@ import {EarthquakeService} from './services/earthquake.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  title = 'earthquake-info-app';
   constructor(public earthquakeService: EarthquakeService) {
   }
 
-  title = 'earthquake-info-app';
 
   async ngOnInit(): Promise<void> {
     await this.earthquakeService.init();
