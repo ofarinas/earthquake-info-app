@@ -2,7 +2,7 @@
 
 ## What is EarthquakeInfoApp?
 
-Earthquake Info App is a web Application to search information about the last earthquakes on the last days.
+EarthquakeInfoApp is a web Application to search information about the last earthquakes on the last days.
 The application provides magnitude, place,date, status, if was a tsunami  and more details. 
 You can filter for a specific search as well as sort the result.      
 
