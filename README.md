@@ -1,13 +1,13 @@
 # EarthquakeInfoApp
 
-##What is EarthquakeInfoApp?
+## What is EarthquakeInfoApp?
 
 Earthquake Info App is a web Application to search information about the last earthquakes on the last days.
 The application provides magnitude, place,date, status, if was a tsunami  and more details. 
 You can filter for a specific search as well as sort the result.      
 
 
-##Deployment
+## Deployment
 
 The application is deployed on Netlify under https://wizardly-kowalevski-131c3a.netlify.app/  in order to add a new functionality or
  adjust the currently code, you need to make the following:
